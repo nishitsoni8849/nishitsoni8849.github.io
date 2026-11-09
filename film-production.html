@@ -1,0 +1,457 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Film & Video Production | AUTOTUBE CREW STUDIO</title>
+
+    <meta name="description" content="Explore film production, commercial filmmaking, cinematography, video production and post-production capabilities at AUTOTUBE CREW STUDIO.">
+
+    <link rel="stylesheet" href="./assets/css/style.css?v=3">
+
+    <style>
+        .service-detail {
+            padding: 75px 8%;
+            max-width: 1250px;
+            margin: auto;
+        }
+
+        .service-detail .intro {
+            background: transparent;
+            padding: 0;
+            color: var(--red);
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+        }
+
+        .service-detail h2 {
+            font-size: clamp(28px, 4vw, 46px);
+            margin-bottom: 22px;
+        }
+
+        .service-detail h2 span,
+        .service-cta h2 span {
+            color: var(--red);
+        }
+
+        .service-detail > p:not(.intro) {
+            color: var(--grey);
+            line-height: 1.8;
+        }
+
+        .detail-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .detail-card {
+            background: var(--dark-grey);
+            border: 1px solid #333;
+            padding: 30px;
+            transition: 0.3s;
+        }
+
+        .detail-card:hover {
+            border-color: var(--red);
+            transform: translateY(-5px);
+        }
+
+        .detail-card .number,
+        .process-step .number {
+            color: var(--red);
+            font-size: 13px;
+            letter-spacing: 2px;
+        }
+
+        .detail-card h3 {
+            margin: 15px 0;
+            font-size: 22px;
+        }
+
+        .detail-card p {
+            color: var(--grey);
+            line-height: 1.8;
+        }
+
+        .process-list {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+            margin-top: 35px;
+        }
+
+        .process-step {
+            background: var(--dark-grey);
+            border-top: 3px solid var(--red);
+            padding: 24px;
+        }
+
+        .process-step h3 {
+            margin: 12px 0;
+        }
+
+        .process-step p {
+            color: var(--grey);
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        .service-cta {
+            background: var(--dark);
+            text-align: center;
+            padding: 80px 8%;
+        }
+
+        .service-cta h2 {
+            font-size: clamp(30px, 5vw, 48px);
+            margin-bottom: 20px;
+        }
+
+        .service-cta p {
+            color: var(--grey);
+            line-height: 1.8;
+            max-width: 650px;
+            margin: 0 auto 28px;
+        }
+
+        @media (max-width: 768px) {
+            .detail-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .process-list {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .service-detail {
+                padding: 55px 6%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .process-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <a href="index.html" class="logo">AUTOTUBE CREW</a>
+
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="hero-background"></div>
+        <div class="hero-circle"></div>
+
+        <div class="hero-content">
+
+            <p class="eyebrow">OUR FILMMAKING CAPABILITIES</p>
+
+            <h1>
+                FILM & <span>VIDEO PRODUCTION</span>
+            </h1>
+
+            <p>
+                Developing powerful visual stories through
+                creative direction, filmmaking, cinematography
+                and professional video production.
+            </p>
+
+            <a href="#overview" class="button-primary">
+                EXPLORE PRODUCTION
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- OVERVIEW -->
+    <section class="service-detail" id="overview">
+
+        <p class="intro">VISUAL STORYTELLING & FILMMAKING</p>
+
+        <h2>
+            EVERY GREAT STORY DESERVES
+            <span>THE BIG SCREEN.</span>
+        </h2>
+
+        <p>
+            Film and video production bring ideas to life
+            through storytelling, creative direction and
+            cinematic visual experiences.
+
+            AUTOTUBE CREW STUDIO focuses on creative
+            development and production capabilities for
+            films, commercials, promotional videos,
+            branded content and entertainment projects.
+
+            From the initial concept to the final edit,
+            our approach combines creative vision,
+            production planning and visual storytelling.
+        </p>
+
+    </section>
+
+
+    <!-- PRODUCTION CAPABILITIES -->
+    <section class="service-detail">
+
+        <p class="intro">OUR PRODUCTION CAPABILITIES</p>
+
+        <h2>
+            STORIES BUILT THROUGH
+            <span>VISUAL EXCELLENCE.</span>
+        </h2>
+
+        <div class="detail-grid">
+
+            <div class="detail-card">
+
+                <span class="number">01 / FILMMAKING</span>
+
+                <h3>Film Production</h3>
+
+                <p>
+                    Creative development and production
+                    planning for narrative films,
+                    entertainment projects and
+                    cinematic storytelling.
+                </p>
+
+            </div>
+
+
+            <div class="detail-card">
+
+                <span class="number">02 / COMMERCIALS</span>
+
+                <h3>Commercial Production</h3>
+
+                <p>
+                    Promotional films, brand commercials
+                    and advertising videos designed
+                    to communicate ideas and connect
+                    with audiences.
+                </p>
+
+            </div>
+
+
+            <div class="detail-card">
+
+                <span class="number">03 / CINEMATOGRAPHY</span>
+
+                <h3>Cinematography</h3>
+
+                <p>
+                    Visual composition, camera direction,
+                    lighting concepts and cinematic
+                    image creation for film and video.
+                </p>
+
+            </div>
+
+
+            <div class="detail-card">
+
+                <span class="number">04 / DIRECTION</span>
+
+                <h3>Creative Direction</h3>
+
+                <p>
+                    Developing visual concepts,
+                    creative approaches and artistic
+                    direction to support the
+                    overall production vision.
+                </p>
+
+            </div>
+
+
+            <div class="detail-card">
+
+                <span class="number">05 / POST-PRODUCTION</span>
+
+                <h3>Video Editing & Post-Production</h3>
+
+                <p>
+                    Editing, sequencing, visual refinement,
+                    color grading and finishing
+                    for professional video content.
+                </p>
+
+            </div>
+
+
+            <div class="detail-card">
+
+                <span class="number">06 / DIGITAL CONTENT</span>
+
+                <h3>Branded Video Content</h3>
+
+                <p>
+                    Digital campaigns, corporate videos,
+                    promotional content and creative
+                    storytelling for modern brands.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRODUCTION WORKFLOW -->
+    <section class="service-detail">
+
+        <p class="intro">OUR PRODUCTION WORKFLOW</p>
+
+        <h2>
+            FROM FIRST IDEA TO
+            <span>FINAL CUT.</span>
+        </h2>
+
+        <div class="process-list">
+
+            <div class="process-step">
+
+                <span class="number">STEP 01</span>
+
+                <h3>Development</h3>
+
+                <p>
+                    Concept development, storytelling,
+                    creative direction and project planning.
+                </p>
+
+            </div>
+
+
+            <div class="process-step">
+
+                <span class="number">STEP 02</span>
+
+                <h3>Pre-Production</h3>
+
+                <p>
+                    Script preparation, storyboarding,
+                    scheduling and production planning.
+                </p>
+
+            </div>
+
+
+            <div class="process-step">
+
+                <span class="number">STEP 03</span>
+
+                <h3>Production</h3>
+
+                <p>
+                    Filming, cinematography,
+                    directing and capturing
+                    the visual story.
+                </p>
+
+            </div>
+
+
+            <div class="process-step">
+
+                <span class="number">STEP 04</span>
+
+                <h3>Post-Production</h3>
+
+                <p>
+                    Editing, color grading,
+                    sound refinement and
+                    final content delivery.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CREATIVE VISION -->
+    <section class="service-detail">
+
+        <p class="intro">OUR CREATIVE PHILOSOPHY</p>
+
+        <h2>
+            WE DON'T JUST CREATE
+            <span>VIDEOS. WE TELL STORIES.</span>
+        </h2>
+
+        <p>
+            Great filmmaking is more than capturing images.
+            It is about connecting ideas, emotions and
+            experiences through visual storytelling.
+
+            Our creative vision is to develop meaningful
+            productions that combine artistic direction,
+            modern technology and cinematic presentation.
+        </p>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="service-cta">
+
+        <p>HAVE A FILM OR VIDEO PROJECT?</p>
+
+        <h2>
+            LET'S TELL YOUR
+            <span>STORY TOGETHER.</span>
+        </h2>
+
+        <p>
+            Share your film concept, commercial idea
+            or production requirements with
+            AUTOTUBE CREW STUDIO.
+        </p>
+
+        <a href="contact.html" class="button-primary">
+            DISCUSS YOUR PROJECT
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <p>© 2026 AUTOTUBE CREW STUDIO. ALL RIGHTS RESERVED.</p>
+
+        <p>CREATIVITY. TECHNOLOGY. STORYTELLING.</p>
+
+    </footer>
+
+</body>
+</html>
