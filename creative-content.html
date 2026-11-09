@@ -1,0 +1,463 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Creative Content Production | AUTOTUBE CREW STUDIO</title>
+
+    <meta name="description" content="Explore creative content production, brand storytelling, advertising campaigns, motion graphics and digital content services at AUTOTUBE CREW STUDIO.">
+
+    <link rel="stylesheet" href="./assets/css/style.css?v=3">
+
+    <style>
+        .service-detail {
+            padding: 75px 8%;
+            max-width: 1250px;
+            margin: auto;
+        }
+
+        .service-detail .intro {
+            background: transparent;
+            padding: 0;
+            color: var(--red);
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+        }
+
+        .service-detail h2 {
+            font-size: clamp(28px, 4vw, 46px);
+            margin-bottom: 22px;
+        }
+
+        .service-detail h2 span,
+        .service-cta h2 span {
+            color: var(--red);
+        }
+
+        .service-detail > p:not(.intro) {
+            color: var(--grey);
+            line-height: 1.8;
+        }
+
+        .detail-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .detail-card {
+            background: var(--dark-grey);
+            border: 1px solid #333;
+            padding: 30px;
+            transition: 0.3s;
+        }
+
+        .detail-card:hover {
+            border-color: var(--red);
+            transform: translateY(-5px);
+        }
+
+        .detail-card .number,
+        .process-step .number {
+            color: var(--red);
+            font-size: 13px;
+            letter-spacing: 2px;
+        }
+
+        .detail-card h3 {
+            margin: 15px 0;
+            font-size: 22px;
+        }
+
+        .detail-card p {
+            color: var(--grey);
+            line-height: 1.8;
+        }
+
+        .process-list {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+            margin-top: 35px;
+        }
+
+        .process-step {
+            background: var(--dark-grey);
+            border-top: 3px solid var(--red);
+            padding: 24px;
+        }
+
+        .process-step h3 {
+            margin: 12px 0;
+        }
+
+        .process-step p {
+            color: var(--grey);
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        .service-cta {
+            background: var(--dark);
+            text-align: center;
+            padding: 80px 8%;
+        }
+
+        .service-cta h2 {
+            font-size: clamp(30px, 5vw, 48px);
+            margin-bottom: 20px;
+        }
+
+        .service-cta p {
+            color: var(--grey);
+            line-height: 1.8;
+            max-width: 650px;
+            margin: 0 auto 28px;
+        }
+
+        @media (max-width: 768px) {
+            .detail-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .process-list {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .service-detail {
+                padding: 55px 6%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .process-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <a href="index.html" class="logo">AUTOTUBE CREW</a>
+
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="hero-background"></div>
+        <div class="hero-circle"></div>
+
+        <div class="hero-content">
+
+            <p class="eyebrow">OUR CREATIVE CONTENT CAPABILITIES</p>
+
+            <h1>
+                CREATIVE <span>CONTENT</span>
+            </h1>
+
+            <p>
+                Creating engaging visual experiences through
+                creative concepts, powerful storytelling,
+                digital content and innovative production.
+            </p>
+
+            <a href="#overview" class="button-primary">
+                EXPLORE CREATIVE CONTENT
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- OVERVIEW -->
+    <section class="service-detail" id="overview">
+
+        <p class="intro">CREATIVITY & DIGITAL STORYTELLING</p>
+
+        <h2>
+            IDEAS THAT CREATE
+            <span>IMPACT.</span>
+        </h2>
+
+        <p>
+            Creative content is the foundation of meaningful
+            communication between brands, businesses
+            and their audiences.
+
+            AUTOTUBE CREW STUDIO focuses on developing
+            creative concepts, visual campaigns, digital
+            storytelling and engaging content for modern
+            communication platforms.
+
+            We combine creativity, production and
+            technology to transform ideas into
+            compelling visual experiences.
+        </p>
+
+    </section>
+
+
+    <!-- CREATIVE CAPABILITIES -->
+    <section class="service-detail">
+
+        <p class="intro">OUR CREATIVE CAPABILITIES</p>
+
+        <h2>
+            CREATIVITY WITHOUT
+            <span>LIMITATIONS.</span>
+        </h2>
+
+        <div class="detail-grid">
+
+            <div class="detail-card">
+
+                <span class="number">01 / CONTENT STRATEGY</span>
+
+                <h3>Creative Content Development</h3>
+
+                <p>
+                    Developing creative concepts, content
+                    directions and storytelling approaches
+                    based on project objectives and
+                    audience requirements.
+                </p>
+
+            </div>
+
+
+            <div class="detail-card">
+
+                <span class="number">02 / BRAND STORYTELLING</span>
+
+                <h3>Brand Storytelling</h3>
+
+                <p>
+                    Creating visual narratives and
+                    brand-focused content that communicate
+                    identity, values and messages
+                    to target audiences.
+                </p>
+
+            </div>
+
+
+            <div class="detail-card">
+
+                <span class="number">03 / ADVERTISING</span>
+
+                <h3>Advertising Campaigns</h3>
+
+                <p>
+                    Developing creative campaign concepts,
+                    promotional visuals and advertising
+                    content for brands and businesses.
+                </p>
+
+            </div>
+
+
+            <div class="detail-card">
+
+                <span class="number">04 / SOCIAL MEDIA</span>
+
+                <h3>Social Media Content</h3>
+
+                <p>
+                    Creating digital content, short-form
+                    videos, promotional visuals and
+                    engaging materials for social
+                    media platforms.
+                </p>
+
+            </div>
+
+
+            <div class="detail-card">
+
+                <span class="number">05 / MOTION GRAPHICS</span>
+
+                <h3>Motion Graphics & Animation</h3>
+
+                <p>
+                    Producing animated graphics,
+                    motion-based visual presentations,
+                    titles and digital storytelling
+                    elements.
+                </p>
+
+            </div>
+
+
+            <div class="detail-card">
+
+                <span class="number">06 / VISUAL DESIGN</span>
+
+                <h3>Creative Visual Design</h3>
+
+                <p>
+                    Developing promotional graphics,
+                    digital visual assets, campaign
+                    designs and creative communication
+                    materials.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CREATIVE WORKFLOW -->
+    <section class="service-detail">
+
+        <p class="intro">OUR CREATIVE WORKFLOW</p>
+
+        <h2>
+            FROM IDEA TO
+            <span>CREATIVE IMPACT.</span>
+        </h2>
+
+        <div class="process-list">
+
+            <div class="process-step">
+
+                <span class="number">STEP 01</span>
+
+                <h3>Discovery</h3>
+
+                <p>
+                    Understanding the brand,
+                    audience, objectives and
+                    creative requirements.
+                </p>
+
+            </div>
+
+
+            <div class="process-step">
+
+                <span class="number">STEP 02</span>
+
+                <h3>Concept Development</h3>
+
+                <p>
+                    Developing creative ideas,
+                    visual directions and
+                    storytelling concepts.
+                </p>
+
+            </div>
+
+
+            <div class="process-step">
+
+                <span class="number">STEP 03</span>
+
+                <h3>Content Production</h3>
+
+                <p>
+                    Creating visual content,
+                    graphics, animations and
+                    digital production assets.
+                </p>
+
+            </div>
+
+
+            <div class="process-step">
+
+                <span class="number">STEP 04</span>
+
+                <h3>Final Delivery</h3>
+
+                <p>
+                    Reviewing, refining and
+                    preparing final content
+                    for the intended platforms.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CREATIVE VISION -->
+    <section class="service-detail">
+
+        <p class="intro">OUR CREATIVE VISION</p>
+
+        <h2>
+            GREAT CONTENT.
+            <span>POWERFUL STORIES.</span>
+        </h2>
+
+        <p>
+            In a world filled with digital communication,
+            meaningful creative content helps ideas
+            stand out and connect with people.
+
+            Our vision is to combine artistic creativity,
+            modern production techniques and digital
+            technology to create memorable content
+            experiences for brands, businesses
+            and entertainment projects.
+        </p>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="service-cta">
+
+        <p>HAVE A CREATIVE PROJECT?</p>
+
+        <h2>
+            LET'S CREATE
+            <span>SOMETHING MEMORABLE.</span>
+        </h2>
+
+        <p>
+            Share your campaign, brand content
+            or creative concept with
+            AUTOTUBE CREW STUDIO.
+        </p>
+
+        <a href="contact.html" class="button-primary">
+            DISCUSS YOUR PROJECT
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <p>© 2026 AUTOTUBE CREW STUDIO. ALL RIGHTS RESERVED.</p>
+
+        <p>CREATIVITY. TECHNOLOGY. STORYTELLING.</p>
+
+    </footer>
+
+</body>
+</html>
