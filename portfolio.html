@@ -7,16 +7,298 @@
 
     <title>Portfolio | AUTOTUBE CREW STUDIO</title>
 
-    <meta name="description" content="Explore the creative production capabilities of AUTOTUBE CREW STUDIO, including animation, CGI, VFX, film and digital experiences.">
+    <meta name="description" content="Explore the creative capabilities of AUTOTUBE CREW STUDIO across 3D animation, CGI, VFX, film production, digital platforms and creative content.">
 
     <link rel="stylesheet" href="./assets/css/style.css?v=3">
+
+    <style>
+        .portfolio-intro {
+            padding: 100px 8%;
+            max-width: 1250px;
+            margin: auto;
+        }
+
+        .portfolio-intro .intro-label {
+            color: var(--red);
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+        }
+
+        .portfolio-intro h2 {
+            font-size: clamp(30px, 5vw, 52px);
+            line-height: 1.15;
+            margin-bottom: 25px;
+        }
+
+        .portfolio-intro h2 span {
+            color: var(--red);
+        }
+
+        .portfolio-intro > p:last-child {
+            color: var(--grey);
+            max-width: 720px;
+            line-height: 1.9;
+        }
+
+        .portfolio-section {
+            padding: 85px 8%;
+            background: var(--black);
+        }
+
+        .portfolio-heading {
+            max-width: 1250px;
+            margin: 0 auto 45px;
+        }
+
+        .portfolio-heading .eyebrow {
+            color: var(--red);
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 3px;
+        }
+
+        .portfolio-heading h2 {
+            font-size: clamp(30px, 4vw, 46px);
+        }
+
+        .portfolio-heading h2 span {
+            color: var(--red);
+        }
+
+        .portfolio-heading p {
+            color: var(--grey);
+            margin-top: 12px;
+            max-width: 650px;
+        }
+
+        .portfolio-grid {
+            max-width: 1250px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .portfolio-card {
+            display: block;
+            background: var(--dark-grey);
+            border: 1px solid #292929;
+            overflow: hidden;
+            transition: 0.3s ease;
+        }
+
+        .portfolio-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--red);
+        }
+
+        .portfolio-visual {
+            height: 230px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .portfolio-visual::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                135deg,
+                rgba(0,0,0,0.1),
+                rgba(0,0,0,0.7)
+            );
+        }
+
+        .portfolio-visual .visual-number {
+            position: relative;
+            z-index: 1;
+            font-size: 75px;
+            font-weight: 900;
+            color: rgba(255,255,255,0.15);
+            letter-spacing: -5px;
+        }
+
+        .visual-animation {
+            background:
+                radial-gradient(circle at 70% 30%,
+                    rgba(229,9,32,0.7), transparent 35%),
+                linear-gradient(135deg,#292929,#080808);
+        }
+
+        .visual-cgi {
+            background:
+                radial-gradient(circle at 30% 40%,
+                    rgba(150,150,150,0.4), transparent 35%),
+                linear-gradient(135deg,#373737,#090909);
+        }
+
+        .visual-vfx {
+            background:
+                radial-gradient(circle at 60% 40%,
+                    rgba(229,9,32,0.6), transparent 40%),
+                linear-gradient(135deg,#171717,#350b10);
+        }
+
+        .visual-film {
+            background:
+                radial-gradient(circle at 75% 35%,
+                    rgba(180,100,50,0.45), transparent 40%),
+                linear-gradient(135deg,#292018,#080808);
+        }
+
+        .visual-digital {
+            background:
+                radial-gradient(circle at 50% 50%,
+                    rgba(50,90,160,0.45), transparent 45%),
+                linear-gradient(135deg,#1c2635,#080808);
+        }
+
+        .visual-creative {
+            background:
+                radial-gradient(circle at 30% 40%,
+                    rgba(229,9,32,0.5), transparent 40%),
+                linear-gradient(135deg,#252525,#080808);
+        }
+
+        .visual-tag {
+            position: absolute;
+            bottom: 18px;
+            left: 20px;
+            z-index: 2;
+            color: #fff;
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+
+        .portfolio-info {
+            padding: 25px;
+        }
+
+        .portfolio-info .category {
+            color: var(--red);
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+
+        .portfolio-info h3 {
+            font-size: 20px;
+            margin: 12px 0;
+        }
+
+        .portfolio-info p {
+            color: var(--grey);
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .portfolio-link {
+            color: #fff;
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+        .portfolio-card:hover .portfolio-link {
+            color: var(--red);
+        }
+
+        .portfolio-note {
+            max-width: 1250px;
+            margin: 35px auto 0;
+            padding: 22px;
+            border-left: 3px solid var(--red);
+            background: #151515;
+            color: var(--grey);
+            font-size: 13px;
+            line-height: 1.8;
+        }
+
+        .portfolio-approach {
+            padding: 100px 8%;
+            text-align: center;
+            background: var(--dark);
+        }
+
+        .portfolio-approach h2 {
+            font-size: clamp(30px, 5vw, 48px);
+            margin-bottom: 22px;
+        }
+
+        .portfolio-approach h2 span {
+            color: var(--red);
+        }
+
+        .portfolio-approach p {
+            color: var(--grey);
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.9;
+        }
+
+        .portfolio-cta {
+            text-align: center;
+            padding: 85px 8%;
+        }
+
+        .portfolio-cta h2 {
+            font-size: clamp(30px, 5vw, 46px);
+            margin-bottom: 20px;
+        }
+
+        .portfolio-cta h2 span {
+            color: var(--red);
+        }
+
+        .portfolio-cta p {
+            color: var(--grey);
+            max-width: 650px;
+            margin: 0 auto 28px;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 950px) {
+            .portfolio-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .portfolio-section {
+                padding: 65px 6%;
+            }
+
+            .portfolio-intro {
+                padding: 65px 6%;
+            }
+
+            .portfolio-visual {
+                height: 210px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
     <!-- HEADER -->
     <header class="header">
-        <a href="index.html" class="logo">AUTOTUBE CREW</a>
+
+        <a href="index.html" class="logo">
+            AUTOTUBE CREW
+        </a>
 
         <nav class="navigation">
             <a href="index.html">Home</a>
@@ -25,179 +307,395 @@
             <a href="portfolio.html">Portfolio</a>
             <a href="contact.html">Contact</a>
         </nav>
+
     </header>
 
 
-    <!-- HERO SECTION -->
+    <!-- HERO -->
     <section class="hero">
+
         <div class="hero-background"></div>
         <div class="hero-circle"></div>
 
         <div class="hero-content">
-            <p class="intro">OUR CREATIVE WORLD</p>
+
+            <p class="eyebrow">OUR CREATIVE WORLD</p>
 
             <h1>
                 OUR <span>PORTFOLIO</span>
             </h1>
 
             <p>
-                A look into the creative disciplines, production
-                capabilities and visual experiences behind our studio.
+                Exploring creative disciplines, cinematic
+                production and digital capabilities
+                through imagination and technology.
             </p>
 
             <a href="#creative-work" class="button-primary">
                 EXPLORE OUR WORK
             </a>
+
         </div>
+
     </section>
 
 
-    <!-- PORTFOLIO INTRODUCTION -->
-    <section class="intro">
-        <p>IMAGINATION INTO REALITY</p>
+    <!-- INTRODUCTION -->
+    <section class="portfolio-intro">
+
+        <p class="intro-label">
+            IMAGINATION INTO REALITY
+        </p>
 
         <h2>
-            BUILT AROUND <span>CREATIVE VISION.</span>
+            BUILT AROUND
+            <span>CREATIVE VISION.</span>
         </h2>
 
         <p>
-            From cinematic animation to digital experiences, we bring
-            together storytelling, design and technology to develop
-            creative work with purpose and impact.
+            AUTOTUBE CREW STUDIO brings together
+            animation, visual effects, filmmaking
+            and digital technology.
+
+            Our creative disciplines represent
+            the production capabilities and
+            directions through which we develop
+            ambitious visual and digital projects.
         </p>
+
     </section>
 
 
-    <!-- CREATIVE CATEGORIES -->
-    <section class="services" id="creative-work">
+    <!-- CREATIVE SHOWCASE -->
+    <section class="portfolio-section" id="creative-work">
 
-        <div class="section-heading">
-            <p>OUR CREATIVE CAPABILITIES</p>
-            <h2>EXPLORE OUR <span>DISCIPLINES</span></h2>
-        </div>
+        <div class="portfolio-heading">
 
-        <div class="service-grid">
+            <p class="eyebrow">
+                OUR CREATIVE CAPABILITIES
+            </p>
 
-            <div class="service-card">
-                <span>01</span>
-                <h3>3D ANIMATION</h3>
-                <p>
-                    Character animation, cinematic sequences,
-                    3D environments and animated visual storytelling.
-                </p>
-                <a href="services.html" class="button-secondary">
-                    EXPLORE SERVICE
-                </a>
-            </div>
+            <h2>
+                EXPLORE OUR
+                <span>DISCIPLINES.</span>
+            </h2>
 
-
-            <div class="service-card">
-                <span>02</span>
-                <h3>CGI & VISUALIZATION</h3>
-                <p>
-                    Photorealistic computer-generated imagery,
-                    product visualization and digital environments.
-                </p>
-                <a href="services.html" class="button-secondary">
-                    EXPLORE SERVICE
-                </a>
-            </div>
-
-
-            <div class="service-card">
-                <span>03</span>
-                <h3>VISUAL EFFECTS</h3>
-                <p>
-                    Visual effects, compositing and cinematic
-                    enhancements for digital and film production.
-                </p>
-                <a href="services.html" class="button-secondary">
-                    EXPLORE SERVICE
-                </a>
-            </div>
-
-
-            <div class="service-card">
-                <span>04</span>
-                <h3>FILM PRODUCTION</h3>
-                <p>
-                    Creative development and production capabilities
-                    for animated films and cinematic projects.
-                </p>
-                <a href="services.html" class="button-secondary">
-                    EXPLORE SERVICE
-                </a>
-            </div>
-
-
-            <div class="service-card">
-                <span>05</span>
-                <h3>DIGITAL EXPERIENCES</h3>
-                <p>
-                    Digital platforms, web experiences and
-                    technology-driven creative solutions.
-                </p>
-                <a href="services.html" class="button-secondary">
-                    EXPLORE SERVICE
-                </a>
-            </div>
-
-
-            <div class="service-card">
-                <span>06</span>
-                <h3>CREATIVE CONTENT</h3>
-                <p>
-                    Visual campaigns, branded content and
-                    creative storytelling for digital audiences.
-                </p>
-                <a href="services.html" class="button-secondary">
-                    EXPLORE SERVICE
-                </a>
-            </div>
+            <p>
+                Discover the different creative and
+                production areas of our studio.
+            </p>
 
         </div>
+
+
+        <div class="portfolio-grid">
+
+
+            <!-- 3D ANIMATION -->
+            <a href="3d-animation.html"
+               class="portfolio-card"
+               aria-label="Explore 3D Animation">
+
+                <div class="portfolio-visual visual-animation">
+
+                    <span class="visual-number">01</span>
+
+                    <span class="visual-tag">
+                        ANIMATION & STORYTELLING
+                    </span>
+
+                </div>
+
+                <div class="portfolio-info">
+
+                    <span class="category">
+                        3D PRODUCTION
+                    </span>
+
+                    <h3>3D Animation</h3>
+
+                    <p>
+                        Character animation, cinematic sequences,
+                        digital environments and animated
+                        visual storytelling.
+                    </p>
+
+                    <span class="portfolio-link">
+                        EXPLORE CAPABILITY →
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <!-- CGI -->
+            <a href="cgi.html"
+               class="portfolio-card"
+               aria-label="Explore CGI and Visualization">
+
+                <div class="portfolio-visual visual-cgi">
+
+                    <span class="visual-number">02</span>
+
+                    <span class="visual-tag">
+                        DIGITAL VISUALIZATION
+                    </span>
+
+                </div>
+
+                <div class="portfolio-info">
+
+                    <span class="category">
+                        CGI & RENDERING
+                    </span>
+
+                    <h3>CGI & Visualization</h3>
+
+                    <p>
+                        Photorealistic rendering, product
+                        visualization and detailed digital
+                        environments.
+                    </p>
+
+                    <span class="portfolio-link">
+                        EXPLORE CAPABILITY →
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <!-- VFX -->
+            <a href="vfx.html"
+               class="portfolio-card"
+               aria-label="Explore Visual Effects">
+
+                <div class="portfolio-visual visual-vfx">
+
+                    <span class="visual-number">03</span>
+
+                    <span class="visual-tag">
+                        CINEMATIC EFFECTS
+                    </span>
+
+                </div>
+
+                <div class="portfolio-info">
+
+                    <span class="category">
+                        VISUAL EFFECTS
+                    </span>
+
+                    <h3>Visual Effects</h3>
+
+                    <p>
+                        Digital compositing, CGI integration,
+                        environment creation and
+                        cinematic enhancements.
+                    </p>
+
+                    <span class="portfolio-link">
+                        EXPLORE CAPABILITY →
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <!-- FILM PRODUCTION -->
+            <a href="film-production.html"
+               class="portfolio-card"
+               aria-label="Explore Film Production">
+
+                <div class="portfolio-visual visual-film">
+
+                    <span class="visual-number">04</span>
+
+                    <span class="visual-tag">
+                        CINEMATIC STORYTELLING
+                    </span>
+
+                </div>
+
+                <div class="portfolio-info">
+
+                    <span class="category">
+                        FILM PRODUCTION
+                    </span>
+
+                    <h3>Film & Video Production</h3>
+
+                    <p>
+                        Filmmaking, cinematography,
+                        creative direction and
+                        professional post-production.
+                    </p>
+
+                    <span class="portfolio-link">
+                        EXPLORE CAPABILITY →
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <!-- DIGITAL PLATFORMS -->
+            <a href="digital-platforms.html"
+               class="portfolio-card"
+               aria-label="Explore Digital Platforms">
+
+                <div class="portfolio-visual visual-digital">
+
+                    <span class="visual-number">05</span>
+
+                    <span class="visual-tag">
+                        DIGITAL INNOVATION
+                    </span>
+
+                </div>
+
+                <div class="portfolio-info">
+
+                    <span class="category">
+                        DIGITAL TECHNOLOGY
+                    </span>
+
+                    <h3>Digital Platforms</h3>
+
+                    <p>
+                        Website development, commercial
+                        portals, web applications and
+                        digital experiences.
+                    </p>
+
+                    <span class="portfolio-link">
+                        EXPLORE CAPABILITY →
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <!-- CREATIVE CONTENT -->
+            <a href="creative-content.html"
+               class="portfolio-card"
+               aria-label="Explore Creative Content">
+
+                <div class="portfolio-visual visual-creative">
+
+                    <span class="visual-number">06</span>
+
+                    <span class="visual-tag">
+                        CREATIVE COMMUNICATION
+                    </span>
+
+                </div>
+
+                <div class="portfolio-info">
+
+                    <span class="category">
+                        CREATIVE CONTENT
+                    </span>
+
+                    <h3>Creative Content</h3>
+
+                    <p>
+                        Brand storytelling, advertising
+                        campaigns, motion graphics and
+                        digital content production.
+                    </p>
+
+                    <span class="portfolio-link">
+                        EXPLORE CAPABILITY →
+                    </span>
+
+                </div>
+
+            </a>
+
+
+        </div>
+
+
+        <!-- TRANSPARENCY NOTE -->
+        <div class="portfolio-note">
+
+            <strong>Portfolio information:</strong>
+
+            These cards present our creative capabilities
+            and service areas. Individual project case studies,
+            production stills and approved client work
+            will be added as they become available.
+
+        </div>
+
     </section>
 
 
     <!-- CREATIVE PHILOSOPHY -->
-    <section class="statement">
-        <p>BEYOND THE ORDINARY</p>
+    <section class="portfolio-approach">
+
+        <p class="eyebrow">
+            BEYOND THE ORDINARY
+        </p>
 
         <h2>
-            EVERY FRAME HAS <span>A PURPOSE.</span>
+            EVERY FRAME HAS
+            <span>A PURPOSE.</span>
         </h2>
 
         <p>
-            We believe powerful creative work starts with a strong idea.
-            Our approach combines imagination, technical expertise
-            and attention to detail at every stage of production.
+            We believe powerful creative work starts
+            with a strong idea. Our approach combines
+            imagination, technical expertise and
+            attention to detail at every stage
+            of production.
         </p>
+
     </section>
 
 
     <!-- PROJECT ENQUIRY -->
-    <section class="contact-section">
-        <p>LET'S BUILD SOMETHING EXTRAORDINARY</p>
+    <section class="portfolio-cta">
+
+        <p class="eyebrow">
+            LET'S BUILD SOMETHING EXTRAORDINARY
+        </p>
 
         <h2>
             HAVE A <span>PROJECT?</span>
         </h2>
 
         <p>
-            Whether you are developing a film, animation,
-            visual campaign or digital platform, let's talk.
+            Whether you are developing a film,
+            animation, visual campaign or digital
+            platform, let's discuss your vision.
         </p>
 
         <a href="contact.html" class="button-primary">
             START A CONVERSATION
         </a>
+
     </section>
 
 
     <!-- FOOTER -->
     <footer class="footer">
-        <p>© 2026 AUTOTUBE CREW STUDIO. ALL RIGHTS RESERVED.</p>
-        <p>CREATIVITY. TECHNOLOGY. STORYTELLING.</p>
+
+        <p>
+            © 2026 AUTOTUBE CREW STUDIO.
+            ALL RIGHTS RESERVED.
+        </p>
+
+        <p>
+            CREATIVITY. TECHNOLOGY. STORYTELLING.
+        </p>
+
     </footer>
 
 </body>
