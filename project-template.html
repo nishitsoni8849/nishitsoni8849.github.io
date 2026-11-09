@@ -1,0 +1,469 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Project Case Study | AUTOTUBE CREW STUDIO</title>
+
+    <meta name="description" content="Explore creative production and digital project case studies by AUTOTUBE CREW STUDIO.">
+
+    <meta name="robots" content="noindex, nofollow">
+
+    <link rel="stylesheet" href="./assets/css/style.css?v=3">
+
+    <style>
+        .project-hero {
+            padding: 160px 8% 75px;
+            background: var(--dark);
+        }
+
+        .project-hero .eyebrow {
+            color: var(--red);
+            letter-spacing: 3px;
+            font-weight: 800;
+            font-size: 12px;
+        }
+
+        .project-hero h1 {
+            font-size: clamp(38px, 7vw, 75px);
+            line-height: 1.1;
+            margin: 20px 0;
+        }
+
+        .project-hero h1 span {
+            color: var(--red);
+        }
+
+        .project-hero p {
+            color: var(--grey);
+            max-width: 700px;
+            line-height: 1.8;
+        }
+
+        .project-meta {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 35px 8%;
+            background: #151515;
+        }
+
+        .meta-item span {
+            display: block;
+            color: var(--red);
+            font-size: 11px;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+        }
+
+        .meta-item h3 {
+            font-size: 15px;
+        }
+
+        .project-visual {
+            margin: 65px auto;
+            width: 84%;
+            min-height: 440px;
+            background:
+                radial-gradient(circle at 65% 30%,
+                rgba(229,9,32,.35), transparent 40%),
+                linear-gradient(135deg,#292929,#080808);
+            border: 1px solid #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .project-visual span {
+            color: #aaa;
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 3px;
+        }
+
+        .project-section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 75px 8%;
+        }
+
+        .project-section .label {
+            color: var(--red);
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+        }
+
+        .project-section h2 {
+            font-size: clamp(28px,4vw,44px);
+            margin-bottom: 25px;
+        }
+
+        .project-section h2 span {
+            color: var(--red);
+        }
+
+        .project-section > p {
+            color: var(--grey);
+            line-height: 1.9;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .project-card {
+            background: var(--dark-grey);
+            border: 1px solid #333;
+            padding: 30px;
+        }
+
+        .project-card h3 {
+            margin-bottom: 15px;
+        }
+
+        .project-card p {
+            color: var(--grey);
+            line-height: 1.8;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .gallery-item {
+            min-height: 250px;
+            background:
+                linear-gradient(135deg,#252525,#101010);
+            border: 1px solid #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            color: #999;
+            font-size: 12px;
+            letter-spacing: 2px;
+        }
+
+        .project-cta {
+            text-align: center;
+            background: var(--dark);
+            padding: 85px 8%;
+        }
+
+        .project-cta h2 {
+            font-size: clamp(30px,5vw,46px);
+            margin-bottom: 20px;
+        }
+
+        .project-cta h2 span {
+            color: var(--red);
+        }
+
+        .project-cta p {
+            color: var(--grey);
+            margin-bottom: 28px;
+            line-height: 1.8;
+        }
+
+        @media(max-width:800px) {
+            .project-meta {
+                grid-template-columns: repeat(2,1fr);
+            }
+
+            .project-visual {
+                min-height: 280px;
+            }
+        }
+
+        @media(max-width:550px) {
+            .project-grid,
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .project-hero {
+                padding: 130px 6% 60px;
+            }
+
+            .project-section {
+                padding: 55px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <a href="index.html" class="logo">
+            AUTOTUBE CREW
+        </a>
+
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- PROJECT HERO -->
+    <section class="project-hero">
+
+        <p class="eyebrow">
+            PROJECT CASE STUDY TEMPLATE
+        </p>
+
+        <h1>
+            PROJECT <span>NAME</span>
+        </h1>
+
+        <p>
+            Replace this introduction with a short,
+            professional description of the actual project,
+            its creative vision and objectives.
+        </p>
+
+    </section>
+
+
+    <!-- PROJECT INFORMATION -->
+    <section class="project-meta">
+
+        <div class="meta-item">
+            <span>PROJECT TYPE</span>
+            <h3>[Project Category]</h3>
+        </div>
+
+        <div class="meta-item">
+            <span>YEAR</span>
+            <h3>[Production Year]</h3>
+        </div>
+
+        <div class="meta-item">
+            <span>SERVICES</span>
+            <h3>[Services Delivered]</h3>
+        </div>
+
+        <div class="meta-item">
+            <span>CLIENT</span>
+            <h3>[Approved Client Name]</h3>
+        </div>
+
+    </section>
+
+
+    <!-- MAIN PROJECT IMAGE -->
+    <div class="project-visual">
+
+        <span>
+            ADD APPROVED PROJECT HERO IMAGE
+        </span>
+
+    </div>
+
+
+    <!-- PROJECT OVERVIEW -->
+    <section class="project-section">
+
+        <p class="label">01 / PROJECT OVERVIEW</p>
+
+        <h2>
+            THE STORY BEHIND
+            <span>THE PROJECT.</span>
+        </h2>
+
+        <p>
+            Add the actual project background, objectives,
+            creative vision and the requirements that
+            shaped the production.
+
+            Explain what the project was designed
+            to achieve and its intended audience.
+        </p>
+
+    </section>
+
+
+    <!-- CREATIVE APPROACH -->
+    <section class="project-section">
+
+        <p class="label">02 / CREATIVE APPROACH</p>
+
+        <h2>
+            TURNING IDEAS INTO
+            <span>VISUAL EXPERIENCES.</span>
+        </h2>
+
+        <div class="project-grid">
+
+            <div class="project-card">
+
+                <h3>Creative Direction</h3>
+
+                <p>
+                    Describe the actual creative direction,
+                    visual references, artistic approach
+                    and storytelling decisions.
+                </p>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>Production Techniques</h3>
+
+                <p>
+                    Describe the production methods,
+                    tools, technologies and techniques
+                    actually used in the project.
+                </p>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>Production Challenges</h3>
+
+                <p>
+                    Explain the important technical
+                    or creative challenges and
+                    how they were addressed.
+                </p>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>Final Outcome</h3>
+
+                <p>
+                    Describe the actual final deliverables,
+                    project completion status and
+                    approved outcomes.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECT GALLERY -->
+    <section class="project-section">
+
+        <p class="label">03 / PROJECT GALLERY</p>
+
+        <h2>
+            BEHIND THE
+            <span>SCENES.</span>
+        </h2>
+
+        <p>
+            Add approved production stills,
+            final renders, concept art,
+            storyboards or other project images.
+        </p>
+
+        <div class="gallery">
+
+            <div class="gallery-item">
+                ADD PROJECT IMAGE 01
+            </div>
+
+            <div class="gallery-item">
+                ADD PROJECT IMAGE 02
+            </div>
+
+            <div class="gallery-item">
+                ADD PROJECT IMAGE 03
+            </div>
+
+            <div class="gallery-item">
+                ADD PROJECT IMAGE 04
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FINAL RESULT -->
+    <section class="project-section">
+
+        <p class="label">04 / PROJECT OUTCOME</p>
+
+        <h2>
+            THE FINAL
+            <span>RESULT.</span>
+        </h2>
+
+        <p>
+            Document the real project results,
+            approved deliverables, completion
+            details and any measurable outcomes.
+
+            Only publish verified information
+            and approved client material.
+        </p>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="project-cta">
+
+        <p>HAVE A SIMILAR CREATIVE PROJECT?</p>
+
+        <h2>
+            LET'S CREATE
+            <span>SOMETHING GREAT.</span>
+        </h2>
+
+        <p>
+            Talk to AUTOTUBE CREW STUDIO
+            about your next production.
+        </p>
+
+        <a href="contact.html" class="button-primary">
+            START A CONVERSATION
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <p>
+            © 2026 AUTOTUBE CREW STUDIO.
+            ALL RIGHTS RESERVED.
+        </p>
+
+        <p>
+            CREATIVITY. TECHNOLOGY. STORYTELLING.
+        </p>
+
+    </footer>
+
+</body>
+</html>
