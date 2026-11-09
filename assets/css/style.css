@@ -523,7 +523,13 @@ header.header nav.navigation {
     margin: 0;
     gap: 28px;
 }
-
+.navigation a {
+    color: #ddd;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
 .navigation a:hover {
     color: var(--red);
 }
