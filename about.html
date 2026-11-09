@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080808">
+
+    <title>About Us | AUTOTUBE CREW</title>
+
+    <meta name="description" content="Discover AUTOTUBE CREW, a creative production studio specializing in animation, CGI, VFX and cinematic storytelling.">
+
+    <link rel="stylesheet" href="./assets/css/style.css?v=3">
+</head>
+
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo">
+        AUTO<span>TUBE</span> CREW
+    </a>
+
+    <nav class="navigation" id="navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html" class="contact-link">Let's Talk ↗</a>
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle"
+        aria-label="Toggle navigation"
+        aria-expanded="false">☰</button>
+</header>
+
+<main>
+
+    <section class="hero">
+        <div class="hero-content">
+
+            <p class="eyebrow">ABOUT AUTOTUBE CREW</p>
+
+            <h1>
+                WE ARE<br>
+                <span>AUTOTUBE</span><br>
+                CREW.
+            </h1>
+
+            <p>
+                An independent creative production studio
+                transforming ambitious ideas into powerful
+                visual experiences.
+            </p>
+
+            <div class="hero-actions">
+                <a href="services.html" class="button-primary">
+                    EXPLORE OUR SERVICES ↗
+                </a>
+            </div>
+
+        </div>
+
+        <div class="hero-background">
+            <div class="hero-circle"></div>
+        </div>
+    </section>
+
+    <section class="about section">
+
+        <div class="about-content">
+
+            <div class="about-text">
+
+                <p class="eyebrow">WHO WE ARE</p>
+
+                <h2 class="section-title">
+                    CREATIVITY<br>
+                    MEETS <span>TECHNOLOGY.</span>
+                </h2>
+
+                <p>
+                    AUTOTUBE CREW is a creative production
+                    studio working across digital platforms,
+                    animation, CGI, visual effects and
+                    cinematic production.
+                </p>
+
+                <p>
+                    We believe every great project begins
+                    with a powerful idea. Our goal is to
+                    transform those ideas into meaningful
+                    visual experiences through creativity,
+                    technology and storytelling.
+                </p>
+
+                <p>
+                    From digital content to ambitious
+                    cinematic productions, we aim to
+                    deliver quality without limits.
+                </p>
+
+            </div>
+
+            <div class="about-image">
+                <span>AUTOTUBE<br>CREW</span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="statement section">
+
+        <p class="eyebrow">OUR VISION</p>
+
+        <h2>
+            THINK BIGGER.<br>
+            CREATE <span>BEYOND.</span>
+        </h2>
+
+        <p>
+            Building creative experiences that connect
+            imagination, technology and storytelling.
+        </p>
+
+    </section>
+
+    <section class="services section">
+
+        <p class="eyebrow">OUR CAPABILITIES</p>
+
+        <h2>WHAT WE <span>DO.</span></h2>
+
+        <div class="service-grid">
+
+            <a href="3d-animation.html" class="service-card">
+                <span>01</span>
+                <h3>3D ANIMATION</h3>
+                <p>Character animation and cinematic worlds.</p>
+                <b>EXPLORE ↗</b>
+            </a>
+
+            <a href="cgi.html" class="service-card">
+                <span>02</span>
+                <h3>CGI</h3>
+                <p>Digital imagery and creative visualization.</p>
+                <b>EXPLORE ↗</b>
+            </a>
+
+            <a href="vfx.html" class="service-card">
+                <span>03</span>
+                <h3>VFX</h3>
+                <p>Visual effects and digital environments.</p>
+                <b>EXPLORE ↗</b>
+            </a>
+
+            <a href="video-production.html" class="service-card">
+                <span>04</span>
+                <h3>PRODUCTION</h3>
+                <p>Commercial and cinematic production.</p>
+                <b>EXPLORE ↗</b>
+            </a>
+
+        </div>
+
+    </section>
+
+    <section class="contact-section section">
+
+        <p class="eyebrow">LET'S WORK TOGETHER</p>
+
+        <h2>
+            HAVE AN IDEA?<br>
+            <span>LET'S CREATE.</span>
+        </h2>
+
+        <a href="contact.html" class="button-primary">
+            CONTACT OUR TEAM ↗
+        </a>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+
+    <a href="index.html" class="logo">
+        AUTO<span>TUBE</span> CREW
+    </a>
+
+    <p>Creative Production. Without Limits.</p>
+
+    <p>© 2026 AUTOTUBE CREW. All Rights Reserved.</p>
+
+</footer>
+
+<script>
+const menuToggle = document.getElementById("menuToggle");
+const navigation = document.getElementById("navigation");
+
+menuToggle.addEventListener("click", function () {
+    navigation.classList.toggle("active");
+
+    const isOpen = navigation.classList.contains("active");
+    menuToggle.setAttribute("aria-expanded", isOpen);
+});
+</script>
+
+</body>
+</html>
