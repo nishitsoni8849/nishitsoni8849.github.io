@@ -1,0 +1,1042 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080808">
+
+    <title>Case Studies | AUTOTUBE CREW</title>
+
+    <meta name="description" content="Explore the creative methodology, production disciplines and visual storytelling approach behind AUTOTUBE CREW projects.">
+
+    <link rel="canonical" href="https://ptautotubecrewstudio.github.io/case-studies.html">
+
+    <meta property="og:title" content="Case Studies | AUTOTUBE CREW">
+    <meta property="og:description" content="Explore creative production methods and visual storytelling at AUTOTUBE CREW.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ptautotubecrewstudio.github.io/case-studies.html">
+
+    <meta name="twitter:card" content="summary">
+
+    <link rel="stylesheet" href="./assets/css/style.css?v=3">
+
+    <style>
+
+/* =========================================
+   AUTOTUBE CREW
+   CASE STUDIES PAGE
+   ========================================= */
+
+/* 1. HERO SECTION */
+
+.case-hero {
+    min-height: 72vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 160px 5% 100px;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            ellipse at 80% 45%,
+            rgba(229, 9, 32, 0.18),
+            transparent 45%
+        ),
+        linear-gradient(110deg, #080808, #151515);
+}
+
+.case-hero-content {
+    width: 100%;
+    max-width: 1180px;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.case-hero h1 {
+    font-size: clamp(48px, 8vw, 95px);
+    line-height: 1.04;
+    font-weight: 900;
+    letter-spacing: -4px;
+    margin-bottom: 30px;
+}
+
+.case-hero h1 span {
+    color: var(--red);
+}
+
+.case-hero p:not(.eyebrow) {
+    max-width: 650px;
+    color: #b5b5b5;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.case-hero-circle {
+    position: absolute;
+    width: 540px;
+    height: 540px;
+    right: 7%;
+    top: 9%;
+    border: 1px solid rgba(229,9,32,0.24);
+    border-radius: 50%;
+    box-shadow: 0 0 100px rgba(229,9,32,0.12);
+}
+
+/* 2. INTRODUCTION */
+
+.case-intro {
+    padding: 110px 5%;
+    background: var(--dark);
+}
+
+.case-container {
+    width: 100%;
+    max-width: 1180px;
+    margin: auto;
+}
+
+.case-intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 70px;
+}
+
+.case-intro h2 {
+    font-size: clamp(34px, 5vw, 58px);
+    line-height: 1.15;
+    font-weight: 900;
+    margin-bottom: 25px;
+}
+
+.case-intro h2 span {
+    color: var(--red);
+}
+
+.case-intro-text p {
+    color: var(--grey);
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 22px;
+}
+
+.case-intro-visual {
+    min-height: 390px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(229,9,32,0.23),
+            transparent 58%
+        ),
+        linear-gradient(135deg, #222, #080808);
+
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.case-intro-visual::before,
+.case-intro-visual::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    border: 1px solid rgba(229,9,32,0.35);
+    border-radius: 50%;
+}
+
+.case-intro-visual::after {
+    width: 190px;
+    height: 190px;
+}
+
+.case-intro-visual span {
+    position: relative;
+    z-index: 2;
+    font-size: 65px;
+    font-weight: 900;
+    letter-spacing: -4px;
+    text-align: center;
+}
+
+/* 3. PRODUCTION APPROACH */
+
+.case-process {
+    padding: 110px 5%;
+    background: var(--black);
+}
+
+.case-heading {
+    margin-bottom: 50px;
+}
+
+.case-heading h2 {
+    font-size: clamp(34px, 5vw, 58px);
+    line-height: 1.15;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.case-heading h2 span {
+    color: var(--red);
+}
+
+.case-heading p:not(.eyebrow) {
+    max-width: 680px;
+    color: var(--grey);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.case-process-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.case-process-card {
+    position: relative;
+    min-height: 260px;
+    padding: 35px 28px;
+    background: #141414;
+    border: 1px solid rgba(255,255,255,0.08);
+    transition: 0.35s ease;
+}
+
+.case-process-card:hover {
+    transform: translateY(-7px);
+    border-color: var(--red);
+}
+
+.case-process-card .number {
+    color: var(--red);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.case-process-card h3 {
+    color: white;
+    font-size: 19px;
+    font-weight: 900;
+    margin: 30px 0 15px;
+}
+
+.case-process-card p {
+    color: var(--grey);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* 4. CREATIVE DISCIPLINES */
+
+.case-disciplines {
+    padding: 110px 5%;
+    background: var(--dark);
+}
+
+.case-discipline-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-top: 45px;
+}
+
+.case-discipline-card {
+    display: block;
+    padding: 30px 24px;
+    min-height: 230px;
+    background: #151515;
+    border: 1px solid rgba(255,255,255,0.08);
+    transition: 0.3s ease;
+}
+
+.case-discipline-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--red);
+}
+
+.case-discipline-card span {
+    color: var(--red);
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.case-discipline-card h3 {
+    margin: 25px 0 14px;
+    font-size: 18px;
+    color: white;
+}
+
+.case-discipline-card p {
+    color: var(--grey);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.case-discipline-card b {
+    display: inline-block;
+    margin-top: 20px;
+    color: var(--red);
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+/* 5. CASE STUDY PUBLICATION AREA */
+
+.case-publication {
+    padding: 100px 5%;
+    background: var(--black);
+}
+
+.case-publication-box {
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 40px;
+    text-align: center;
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(229,9,32,0.13),
+            transparent 65%
+        ),
+        #151515;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.case-publication-box .publication-label {
+    color: var(--red);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+.case-publication-box h2 {
+    font-size: clamp(28px, 5vw, 48px);
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 22px;
+}
+
+.case-publication-box h2 span {
+    color: var(--red);
+}
+
+.case-publication-box p {
+    color: var(--grey);
+    max-width: 650px;
+    margin: auto;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+/* 6. QUALITY APPROACH */
+
+.case-quality {
+    padding: 100px 5%;
+    background: #101010;
+}
+
+.case-quality-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.case-quality h2 {
+    font-size: clamp(32px, 5vw, 52px);
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+.case-quality h2 span {
+    color: var(--red);
+}
+
+.case-quality p {
+    color: var(--grey);
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+.case-quality-list {
+    display: grid;
+    gap: 16px;
+}
+
+.case-quality-item {
+    padding: 22px 25px;
+    background: #191919;
+    border-left: 2px solid var(--red);
+    color: #ddd;
+    font-size: 14px;
+}
+
+/* 7. CONTACT CTA */
+
+.case-contact {
+    padding: 110px 5%;
+    text-align: center;
+
+    background:
+        radial-gradient(
+            ellipse at center,
+            rgba(229,9,32,0.13),
+            transparent 65%
+        ),
+        var(--black);
+}
+
+.case-contact h2 {
+    font-size: clamp(35px, 6vw, 65px);
+    line-height: 1.15;
+    font-weight: 900;
+    margin-bottom: 25px;
+}
+
+.case-contact h2 span {
+    color: var(--red);
+}
+
+.case-contact p {
+    color: var(--grey);
+    margin-bottom: 35px;
+}
+
+/* 8. RESPONSIVE DESIGN */
+
+@media (max-width: 900px) {
+
+    .case-intro-grid,
+    .case-quality-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .case-process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .case-discipline-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .case-hero {
+        min-height: 75vh;
+        padding: 130px 5% 80px;
+    }
+
+    .case-hero h1 {
+        font-size: 46px;
+        letter-spacing: -2px;
+    }
+
+    .case-hero p:not(.eyebrow) {
+        font-size: 15px;
+    }
+
+    .case-hero-circle {
+        width: 280px;
+        height: 280px;
+        right: -130px;
+        top: 25%;
+    }
+
+    .case-intro,
+    .case-process,
+    .case-disciplines {
+        padding: 75px 5%;
+    }
+
+    .case-intro-visual {
+        min-height: 270px;
+    }
+
+    .case-intro-visual span {
+        font-size: 48px;
+    }
+
+    .case-process-grid,
+    .case-discipline-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .case-process-card {
+        min-height: 220px;
+    }
+
+    .case-publication {
+        padding: 70px 5%;
+    }
+
+    .case-publication-box {
+        padding: 40px 23px;
+    }
+
+    .case-quality {
+        padding: 75px 5%;
+    }
+
+    .case-contact {
+        padding: 80px 5%;
+    }
+
+}
+
+/* 9. ACCESSIBILITY */
+
+.case-discipline-card:focus-visible {
+    outline: 2px solid var(--red);
+    outline-offset: 5px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .case-process-card:hover,
+    .case-discipline-card:hover {
+        transform: none;
+    }
+
+}
+
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header class="header">
+
+    <a href="index.html" class="logo">
+        AUTO<span>TUBE</span> CREW
+    </a>
+
+    <nav class="navigation" id="navigation">
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About</a>
+
+        <a href="services.html">Services</a>
+
+        <a href="portfolio.html">Portfolio</a>
+
+        <a href="blog.html">Journal</a>
+
+        <a href="contact.html" class="contact-link">
+            Let's Talk ↗
+        </a>
+
+    </nav>
+
+    <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-label="Open navigation"
+        aria-expanded="false">
+
+        ☰
+
+    </button>
+
+</header>
+
+
+<main>
+
+    <!-- HERO -->
+
+    <section class="case-hero">
+
+        <div class="case-hero-content">
+
+            <p class="eyebrow">
+                AUTOTUBE CREW / CASE STUDIES
+            </p>
+
+            <h1>
+                IDEAS INTO<br>
+                <span>EXPERIENCES.</span>
+            </h1>
+
+            <p>
+                Explore the creative thinking, production
+                methods and technical disciplines that
+                contribute to cinematic visual experiences.
+            </p>
+
+        </div>
+
+        <div class="case-hero-circle"></div>
+
+    </section>
+
+
+    <!-- INTRODUCTION -->
+
+    <section class="case-intro">
+
+        <div class="case-container">
+
+            <div class="case-intro-grid">
+
+                <div class="case-intro-text">
+
+                    <p class="eyebrow">
+                        BEHIND THE CREATION
+                    </p>
+
+                    <h2>
+                        THE PROCESS<br>
+                        BEHIND <span>THE VISION.</span>
+                    </h2>
+
+                    <p>
+                        Every creative production begins
+                        with an idea, a purpose and a
+                        visual direction.
+                    </p>
+
+                    <p>
+                        Transforming that idea into a
+                        finished visual experience requires
+                        planning, creative development,
+                        technical execution and quality review.
+                    </p>
+
+                    <p>
+                        AUTOTUBE CREW brings together
+                        creative and production disciplines
+                        across animation, CGI, VFX and
+                        cinematic production.
+                    </p>
+
+                </div>
+
+
+                <div class="case-intro-visual">
+
+                    <span>
+                        VISION<br>
+                        TO VISUALS
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRODUCTION PROCESS -->
+
+    <section class="case-process">
+
+        <div class="case-container">
+
+            <div class="case-heading">
+
+                <p class="eyebrow">
+                    PRODUCTION METHODOLOGY
+                </p>
+
+                <h2>
+                    FROM CONCEPT<br>
+                    TO <span>CREATION.</span>
+                </h2>
+
+                <p>
+                    A structured production approach
+                    helps connect creative decisions
+                    with technical execution.
+                </p>
+
+            </div>
+
+
+            <div class="case-process-grid">
+
+
+                <article class="case-process-card">
+
+                    <span class="number">01 / DISCOVERY</span>
+
+                    <h3>CONCEPT DEVELOPMENT</h3>
+
+                    <p>
+                        Understanding the creative idea,
+                        production goals, audience and
+                        visual direction.
+                    </p>
+
+                </article>
+
+
+                <article class="case-process-card">
+
+                    <span class="number">02 / PLANNING</span>
+
+                    <h3>STORY & STORYBOARD</h3>
+
+                    <p>
+                        Organizing narrative, visual
+                        references, compositions and
+                        shot-by-shot planning.
+                    </p>
+
+                </article>
+
+
+                <article class="case-process-card">
+
+                    <span class="number">03 / DESIGN</span>
+
+                    <h3>VISUAL DEVELOPMENT</h3>
+
+                    <p>
+                        Establishing environments,
+                        characters, art direction,
+                        materials and visual language.
+                    </p>
+
+                </article>
+
+
+                <article class="case-process-card">
+
+                    <span class="number">04 / PRODUCTION</span>
+
+                    <h3>ASSET & SCENE CREATION</h3>
+
+                    <p>
+                        Developing production assets,
+                        models, textures, rigs and
+                        digital environments.
+                    </p>
+
+                </article>
+
+
+                <article class="case-process-card">
+
+                    <span class="number">05 / EXECUTION</span>
+
+                    <h3>ANIMATION & EFFECTS</h3>
+
+                    <p>
+                        Bringing scenes to life through
+                        animation, lighting, CGI and
+                        visual effects.
+                    </p>
+
+                </article>
+
+
+                <article class="case-process-card">
+
+                    <span class="number">06 / FINISHING</span>
+
+                    <h3>POST & QUALITY CONTROL</h3>
+
+                    <p>
+                        Reviewing final visuals,
+                        compositing, finishing and
+                        delivery requirements.
+                    </p>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CREATIVE DISCIPLINES -->
+
+    <section class="case-disciplines">
+
+        <div class="case-container">
+
+            <div class="case-heading">
+
+                <p class="eyebrow">
+                    OUR PRODUCTION CAPABILITIES
+                </p>
+
+                <h2>
+                    CREATIVE <span>DISCIPLINES.</span>
+                </h2>
+
+                <p>
+                    Explore the areas that contribute
+                    to digital production and cinematic
+                    visual experiences.
+                </p>
+
+            </div>
+
+
+            <div class="case-discipline-grid">
+
+
+                <a
+                    href="3d-animation.html"
+                    class="case-discipline-card">
+
+                    <span>01 / ANIMATION</span>
+
+                    <h3>3D ANIMATION</h3>
+
+                    <p>
+                        Characters, movement,
+                        performance and digital worlds.
+                    </p>
+
+                    <b>EXPLORE ↗</b>
+
+                </a>
+
+
+                <a
+                    href="cgi.html"
+                    class="case-discipline-card">
+
+                    <span>02 / VISUALIZATION</span>
+
+                    <h3>CGI PRODUCTION</h3>
+
+                    <p>
+                        Modeling, lighting, rendering
+                        and visual creation.
+                    </p>
+
+                    <b>EXPLORE ↗</b>
+
+                </a>
+
+
+                <a
+                    href="vfx.html"
+                    class="case-discipline-card">
+
+                    <span>03 / EFFECTS</span>
+
+                    <h3>VISUAL EFFECTS</h3>
+
+                    <p>
+                        Digital environments,
+                        compositing and visual effects.
+                    </p>
+
+                    <b>EXPLORE ↗</b>
+
+                </a>
+
+
+                <a
+                    href="film-production.html"
+                    class="case-discipline-card">
+
+                    <span>04 / CINEMA</span>
+
+                    <h3>FILM PRODUCTION</h3>
+
+                    <p>
+                        Cinematic storytelling and
+                        production workflows.
+                    </p>
+
+                    <b>EXPLORE ↗</b>
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CASE STUDY PUBLICATION -->
+
+    <section class="case-publication">
+
+        <div class="case-publication-box">
+
+            <p class="publication-label">
+                PROJECT STORIES
+            </p>
+
+            <h2>
+                REAL WORK.<br>
+                <span>REAL STORIES.</span>
+            </h2>
+
+            <p>
+                Approved project case studies and
+                production breakdowns will be published
+                here when the relevant project details,
+                visuals and publication permissions
+                are confirmed.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- QUALITY APPROACH -->
+
+    <section class="case-quality">
+
+        <div class="case-container">
+
+            <div class="case-quality-grid">
+
+                <div>
+
+                    <p class="eyebrow">
+                        OUR APPROACH
+                    </p>
+
+                    <h2>
+                        QUALITY IN<br>
+                        EVERY <span>FRAME.</span>
+                    </h2>
+
+                </div>
+
+
+                <div>
+
+                    <p>
+                        Strong visual production depends
+                        on more than a final image. It
+                        requires consistent creative
+                        direction, technical planning
+                        and careful review.
+                    </p>
+
+                    <p>
+                        Our production philosophy focuses
+                        on connecting artistic vision with
+                        technical execution throughout
+                        the creative process.
+                    </p>
+
+                    <div class="case-quality-list">
+
+                        <div class="case-quality-item">
+                            Creative direction and consistency
+                        </div>
+
+                        <div class="case-quality-item">
+                            Structured production planning
+                        </div>
+
+                        <div class="case-quality-item">
+                            Technical and visual review
+                        </div>
+
+                        <div class="case-quality-item">
+                            Final delivery requirements
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT CTA -->
+
+    <section class="case-contact">
+
+        <p class="eyebrow">
+            HAVE A PROJECT IN MIND?
+        </p>
+
+        <h2>
+            LET'S BUILD<br>
+            <span>YOUR NEXT VISION.</span>
+        </h2>
+
+        <p>
+            Connect with AUTOTUBE CREW
+            to discuss your creative production needs.
+        </p>
+
+        <a
+            href="contact.html"
+            class="button-primary">
+
+            START A CONVERSATION ↗
+
+        </a>
+
+    </section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+    <a href="index.html" class="logo">
+        AUTO<span>TUBE</span> CREW
+    </a>
+
+    <p>
+        Creative Production. Without Limits.
+    </p>
+
+    <p>
+        © 2026 AUTOTUBE CREW. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<!-- SHARED JAVASCRIPT -->
+
+<script src="./assets/js/main.js" defer></script>
+
+</body>
+</html>
